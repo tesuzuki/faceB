@@ -39,9 +39,14 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (6.0.4)
+    autoprefixer-rails (7.1.5)
+      execjs
     bcrypt (3.1.11)
     binding_of_caller (0.7.3)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.1.0)
     carrierwave (1.2.1)
@@ -73,9 +78,12 @@ GEM
     faraday (0.12.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
+    font-awesome-rails (4.7.0.2)
+      railties (>= 3.2, < 5.2)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     hashie (3.5.6)
+    honoka-rails (3.3.7)
     i18n (0.9.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -220,11 +228,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   byebug
   carrierwave
   coffee-rails (~> 4.1.0)
   devise
   dotenv-rails
+  font-awesome-rails
+  honoka-rails (>= 3.3.6.3)
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener_web
