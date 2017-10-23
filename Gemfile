@@ -41,6 +41,11 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'capistrano', '3.6.0'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-unicorn'
 end
 
 gem 'devise'
@@ -62,3 +67,7 @@ gem 'font-awesome-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'honoka-rails', '>= 3.3.6.3'
 gem 'fog'
+ gem 'dotenv-rails'
+  gem 'unicorn'
+  
+  gem 'therubyracer', platforms: :ruby
