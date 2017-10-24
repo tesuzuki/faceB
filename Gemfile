@@ -68,8 +68,7 @@ gem 'font-awesome-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'honoka-rails', '>= 3.3.6.3'
 gem 'fog'
- gem 'dotenv-rails'
-  gem 'unicorn'
-  
-  gem 'therubyracer', platforms: :ruby
-  gem 'faker'
+gem 'dotenv-rails'
+gem 'unicorn'
+gem 'therubyracer', platforms: :ruby
+gem 'faker'
