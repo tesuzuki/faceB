@@ -16,9 +16,9 @@
     <%= link_to "投稿する", new_topic_path, class: 'btn btn-default' %>
     <% @topics.each do |topic| %>
       <div class="row">
-        <h6><%= new_profile_img(@users[topic.user_id - 1],"50x50") if profile_img(@users[topic.user_id - 1]) %>
+        <h6><%= new_profile_img(@users.find{|item| item.id == topic.user_id},"50x50") if profile_img(@users.find{|item| item.id == topic.user_id}) %>
         <%= link_to user_path(topic.user_id) do %>
-        <%= @users[topic.user_id - 1].name %>
+        <%= @users.find{|item| item.id == topic.user_id}.name %>
         <% end %>
         さんの投稿</h6>
         <%= link_to topic_path(topic) do %>
