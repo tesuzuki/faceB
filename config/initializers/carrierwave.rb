@@ -12,7 +12,10 @@ CarrierWave.configure do |config|
 
   case Rails.env
     when 'production'
-      config.fog_directory = 'tesuzuki-faceb-production'
+      config.fog_directory = 'tesuzuki-achieve-production'
       config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/tesuzuki-faceb-production'
+    when 'development'
+      config.fog_directory = 'tesuzuki-achieve-production'
+      config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/tesuzuki-achieve-production'
   end
 end
